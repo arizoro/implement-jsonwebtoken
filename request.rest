@@ -1,0 +1,27 @@
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "username" : "aripurnama",
+    "email" : "arizoro881@gmail.com",
+    "password" : "rahasia"
+}
+
+###
+POST http://localhost:3000/api/users/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username" : "aripurnama",
+    "password" : "rahasia"
+}
+
+###
+GET http://localhost:3000/api/users/current HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFyaXB1cm5hbWEiLCJwYXNzd29yZCI6IiQyYiQxMCRiN1IyUTNvY0x1aE1ZbTdPOXg1ZGVPeTlhOXdhZ0Z3cUlLMlhHUy9lV013MjBPYk9hYlpVeSIsImlhdCI6MTcwNjUyMTkxOSwiZXhwIjoxNzA2NTIxOTM5fQ.dvRQwmwWS3bIuJDO0TJl642e6cx1-1bm14X-NtNV_zo
+
+###
+GET http://localhost:3000/api/users/token HTTP/1.1
+
+###
+DELETE http://localhost:3000/api/users/logout  HTTP/1.1
